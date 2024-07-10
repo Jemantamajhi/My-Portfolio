@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>contact me</title>
+  <link rel="stylesheet" href="contact.css">
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+  <!-- contact form -->
+  <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">Bhubaneswar,odisha</div>
+          <div class="text-two">khurdha, 752057</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">+917683814545</div>
+          <div class="text-two">+918260664470</div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">jemantamajhi2@gmail.com</div>
+          <div class="text-two">jemantamajhicare4u@gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from
+          here. It's my pleasure to help you.</p>
+        <form action="https://getform.io/f/683a96cb-99fd-4e16-94e9-0cccb6c347df" method="POST">
+          <div class="input-box">
+            <input type="text" id="myInput" name="name" placeholder="Enter your name">
+          </div>
+          <div class="input-box">
+            <input type="text" id="myInput" name="email" placeholder="Enter your email">
+          </div>
+          <div class="input-box message-box">
+            <!-- <textarea name="text" id="myInput" cols="30" placeholder="send a message" rows="10"></textarea> -->
+            <input type="text" name="message" id="myInput" placeholder="Send a message">
+          </div>
+          <div class="button">
+            <!-- <input type="button" value="Send Now" > -->
+            <button type="submit" class="btn" onclick="myFunction()">Send Now</button>
+          </div>
+          <div class="button">
+            <input type="button" class="btn" value="clear" onclick="clearText()">
+          </div>
+
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function myFunction() {
+      var inputVal = document.getElementById("myInput").value;
+      if (inputVal === "") {
+        alert("Input field is empty!");
+      } else {
+        alert("Congrats:Now wait for the Reply have a good Day");
+      }
+    }
+    function clearText() {
+      var inputs = document.getElementsByTagName("input");
+      for (var i = 0; i < inputs.length; i++) {
+        if (inputs[i].type == "text") {
+          inputs[i].value = "";
+        }
+      }
+    }
+
+
+
+  </script>
+
+</body>
+
+</html>
