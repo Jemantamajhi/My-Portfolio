@@ -55,6 +55,7 @@ nav .navbar .logo a {
   font-weight: 500;
   font-size: 35px;
   color: #4070f4;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 nav.sticky .navbar .logo a {
@@ -69,6 +70,7 @@ nav .navbar .menu {
 nav .navbar .menu li {
   list-style: none;
   margin: 0 8px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .navbar .menu a {
@@ -130,7 +132,7 @@ nav.sticky .menu-btn {
 .home {
   height: 100vh;
   width: 100%;
-  background: url("Images/my bg img.svg") no-repeat;
+  background: url("images/my bg img.svg") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -149,6 +151,7 @@ nav.sticky .menu-btn {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .home .text-one {
@@ -204,7 +207,10 @@ nav.sticky .menu-btn {
 section {
   padding-top: 40px;
 }
-
+.home{
+  height: 93vh;
+  
+}
 section .content {
   width: 80%;
   margin: 40px auto;
@@ -258,6 +264,8 @@ section .title span::after {
   width: 400px;
   object-fit: cover;
   border-radius: 50%;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+ 
 }
 
 .about-details .right {
@@ -302,10 +310,11 @@ section .button button:hover {
 /* My Skills CSS */
 .skills {
   background: #F0F8FF;
+ 
 }
 
 .skills .content {
-  padding: 40px 0;
+  padding: 10px 0;
 }
 
 .skills .skills-details {
@@ -566,8 +575,10 @@ footer .text span a:hover {
 @media (max-width: 1190px) {
   section .content {
     width: 85%;
+   
+    
   }
-}
+ 
 
 @media (max-width: 1000px) {
   .about .about-details {
